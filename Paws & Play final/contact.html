@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw & Play</title>
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- goggle font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- fontawesome cdn linl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top " id="main-nav">
+        <div class="container">
+            <div class="d-flex gap-3">
+                <div class="nav-icon">
+                    <a href=""><i class="fa-solid fa-paw"></i></a></i>
+                </div>
+                <div class="nav-logo">
+                    <span><a href="" class="color">Paws & Plays</a></span><br>
+                    <a href="" class="color">Premium Pet Care</a>
+                </div>
+            </div>
+            <button class="navbar-toggler data" data-bs-target="#list" data-bs-toggle="collapse">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse  " id="list">
+                <ul class="navbar-nav  m-auto text-center d-flex justify-content-between gap-3 fw-semibold ">
+                    <li><a href="index.html#service" class="color">Service</a></li>
+                    <li><a href="index.html#about" class="color">About</a></li>
+                    <li><a href="index.html#gallery" class="color">Gallery</a></li>
+                    <li><a href="team.html" class="color">Team</a></li>
+                    <li><a href="contact.html" class="color">Contact</a></li>
+                </ul>
+                <div class=" d-flex nav-button gap-3">
+                    <i class="fa-regular fa-moon text-secondary"></i>
+                    <button class="nav-btn w-100 px-3 ">
+                        <a href="" class="d-block w-100 ">Book Now</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- team banner -->
+    <section class=" team-banner">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-center text-white">
+                        <h2 class="Lora">Get in Touch</h2>
+                        <p>Book an appointment, ask a question, or just say hello. We'd love to hear from you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10 col-sm-12">
+                    <h2 class="Lora">
+                        Book an Appointment
+                    </h2>
+                    <p class="poppins">
+                        Fill out the form below and we'll get back to you within 24 hours.
+                    </p>
+                    <form>
+                        <div class="row form_row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label class="poppins">Your Name </label>
+                                <input type="text" placeholder="Jane Smith" class="form-control" required />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label class="poppins">Phone Number</label>
+                                <input type="number" placeholder="(555) 123-4567" class="form-control" required />
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="poppins">Email Address </label>
+                                <input type="email" placeholder="jane@example.com" class="form-control" required />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label class="poppins">Pet's Name </label>
+                                <input type="text" placeholder="Max" class="form-control" required />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label class="poppins">Pet Type </label>
+                                <select class="form-select">
+                                    <option>Select pet type </option>
+                                    <option>Dog</option>
+                                    <option>Cat</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="poppins">Service Interested In </label>
+                                <select class="form-select required">
+                                    <option>Select a service</option>
+                                    <option>Full Grooming</option>
+                                    <option>Bath & Brush</option>
+                                    <option>Daycare</option>
+                                    <option>Overnight Boarding</option>
+                                    <option>Nail Trim</option>
+                                    <option>Puppy Package</option>
+                                    <option>Other / General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label class="poppins">Additional Information </label>
+                                <textarea rows="5" class="form-control"
+                                    placeholder="Tell us about your pet, preferred dates, or any special requirements..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form_btn ">
+                            <button class="poppins">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-10 col-sm-12">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-11 col-md-12">
+                            <h2 class="Lora">
+                                Contact Information
+                            </h2>
+                            <p class="poppins">
+                                Reach out through any of these channels.
+                            </p>
+                            <div class="contaact_info">
+                                <div class="d-flex">
+                                    <div class="contaact_info_icon">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#db2777">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold poppins m-0">Email</p>
+                                        <span class="text-secondary poppins">hello@pawsandplay.com</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="contaact_info_icon">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#db2777">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold poppins m-0">Phone</p>
+                                        <span class="text-secondary poppins">(555) 728-7529</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="contaact_info_icon">
+                                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#db2777">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="fw-bold poppins m-0">Hours</p>
+                                        <span class="text-secondary poppins d-block">Mon-Fri: 7:00 AM - 7:00 PM</span>
+                                        <span class="text-secondary poppins d-block">Saturday: 8:00 AM - 6:00 PM</span>
+                                        <span class="text-secondary poppins d-block">Sunday: 9:00 AM - 5:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map_box">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d353163.07100504887!2d-98.19793817412585!3d30.28001310941007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s456%20Pet%20Paradise%20Lane%2C%20Austin%2C%20TX!5e1!3m2!1sen!2s!4v1778442546157!5m2!1sen!2s"
+                                    width="100%" height="297" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <div class="map_body">
+                                    <p class="m-0 poppins fw-bold">
+                                        Paws & Play
+                                    </p>
+                                    <span class="text-secondary poppins">
+                                        456 Pet Paradise Lane, Austin, TX 78701
+                                    </span>
+                                    <div class="mt-2">
+                                        <a href="https://www.google.com/maps/search/456+Pet+Paradise+Lane,+Austin,+TX/@30.2800131,-98.1979382,81100m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
+                                            target="_blank" class="map_link poppins">
+                                            Get Directions
+                                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="#db2777">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- why choose our team  -->
+    <section class="new-client">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="text-center">
+                        <h2 class="Lora">New Client Information</h2>
+                        <p class="text-secondary">Welcome to Paws & Play! Here's what you need to know for your first
+                            visit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="certifications h-100">
+                        <div class="Client-icon">
+                            <i class="fa-regular fa-file"></i>
+                        </div>
+                        <h6 class="mt-3">Vaccination Records</h6>
+                        <p class="text-secondary m-0">Please bring proof of current vaccinations: Rabies,
+                            Distemper/Parvo, and Bordetella for dogs; Rabies and FVRCP for cats.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="certifications h-100">
+                        <div class="Client-icon icon-2 ">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <h6 class="mt-3">New Client Discount</h6>
+                        <p class="text-secondary m-0">First-time customers receive 15% off their first grooming service.
+                            Mention this offer when booking!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="certifications h-100">
+                        <div class="Client-icon ">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <h6 class="mt-3">Years of Experience</h6>
+                        <p class="text-secondary m-0">Our team has combined experience of over 50 years working with
+                            pets of all breeds and temperaments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS section -->
+    <section class="faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h2 class="Lora">Frequently Asked Questions</h2>
+                        <p class="text-secondary poppins">Everything you need to know about our services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="faqs_main">
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    How often should I get my dog groomed?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    It depends on the breed and coat type. Most dogs benefit from professional grooming
+                                    every 4-8 weeks. Dogs with longer coats or those prone to matting may need more
+                                    frequent visits. We'll create a personalized schedule during your first visit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    Do you groom cats?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    Yes! We offer grooming services for cats including lion cuts, bath and brush, nail
+                                    trims, and sanitary trims. Our groomers are experienced in handling cats and use
+                                    gentle, feline-friendly techniques.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    What vaccinations are required?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    For dogs: Rabies, Distemper/Parvo, and Bordetella (kennel cough). For cats: Rabies
+                                    and FVRCP. All vaccinations must be current and documented by a licensed
+                                    veterinarian. We require proof at your first visit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    Can I stay and watch the grooming?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    We find that pets do better when their owners aren't present, as they tend to be
+                                    calmer and more cooperative. However, we're happy to send photo updates during the
+                                    appointment and you can always call to check in.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    What if my pet has special needs or medical conditions?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    Please let us know about any medical conditions, allergies, or special needs when
+                                    booking. Our team is trained to handle pets with various conditions, and we can
+                                    accommodate most special requirements.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faqs_box">
+                            <div class="faqs_icon">
+                                <span>?</span>
+                            </div>
+                            <div>
+                                <h3 class="poppins m-0">
+                                    Do you offer pickup and delivery?
+                                </h3>
+                                <p class="poppins mb-0">
+                                    Yes! We offer pet taxi services within a 10-mile radius for an additional fee. This
+                                    is especially popular for our regular daycare clients and those with busy schedules.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="more_question text-center">
+                        <h3 class="poppins">
+                            Still have questions?
+                        </h3>
+                        <p>
+                            We're here to help! Reach out to us anytime.
+                        </p>
+                        <a href="" class="d-inline-block">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-2 footer-sec-padding">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div class="footer-icon">
+                            <a href=""><i class="fa-solid fa-paw"></i></a></i>
+                        </div>
+                        <h4><a href="" class="text-white">Paws & Plays</a></h4>
+                    </div>
+                    <p class="text-secondary mt-3">Premium pet grooming, daycare, and boarding services in Austin, TX.
+                        Loving care for your furry family members since 2015.</p>
+                    <div class="footer-list mt-4">
+                        <ul class="d-flex gap-4">
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                            </li>
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Services</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">Grooming</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Daycare</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Boarding</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Company</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">About US</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Our Team</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Gallery</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Support</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">FAQs</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">New Client Info</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Vaccination Policy</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Cancellation Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-secondary opacity-25">
+            <div class="row footer-sec-padding">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>HOURS</h6>
+                        <p class="mb-1">Mon-Fri: 7:00 AM - 7:00 PM</p>
+                        <p class="mb-1">Saturday: 8:00 AM - 6:00 PM</p>
+                        <p class="mb-1">Sunday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>CONTACT</h6>
+                        <p class="mb-1">hello@pawsandplay.com</p>
+                        <p class="mb-1">(555) 728-7529</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>LOCATION</h6>
+                        <p class="mb-1">456 Pet Paradise Lane</p>
+                        <p class="mb-1">Austin, TX 78701</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-secondary opacity-25">
+            <div class="row footer-sec-padding">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div>
+                        <p class="text-secondary">© 2026 Paws & Play. Designed & Developed by Ayesha Zanib.</p>
+                    </div>
+                    <div class="g-3">
+                        <a href="" class="text-secondary" style="margin-right: 20px;"> Privacy Policy</a>
+                        <a href="" class="text-secondary">Terms & Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- java link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('main-nav');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled-nav');
+            } else {
+                navbar.classList.remove('scrolled-nav');
+            }
+        });
+    </script>
+</body>
+</body>
+
+</html>

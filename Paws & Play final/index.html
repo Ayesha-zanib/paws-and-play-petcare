@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw & Play</title>
+
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- goggle font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- fontawesome cdn linl -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-lg " id="navbar_animation">
+            <div class="container">
+                <div class="d-flex gap-3">
+                    <div class="nav-icon">
+                        <a href=""><i class="fa-solid fa-paw"></i></a></i>
+                    </div>
+                    <div class="nav-logo">
+                        <span><a href="">Paws & Plays</a></span><br>
+                        <a href="" class="text-secondary">Premium Pet Care</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler data" data-bs-target="#list" data-bs-toggle="collapse">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse  " id="list">
+                    <ul class="navbar-nav  m-auto text-center d-flex justify-content-between gap-3 fw-semibold ">
+                        <li><a href="#service" class="nav-link">Service</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="team.html" class="nav-link">Team</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class=" d-flex nav-button gap-3">
+                        <i class="fa-regular fa-moon text-secondary"></i>
+                        <button class="nav-btn px-3 w-100">
+                            <a href="" class="d-block w-100 text-decoration-none">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- banner sectin -->
+        <div class="section-distance pb-100">
+            <svg class="w-full" viewBox="0 0 1440 100" fill="none" preserveAspectRatio="none">
+                <path d="M0 50C240 100 480 0 720 50C960 100 1200 0 1440 50V100H0V50Z" fill="#ffffff"
+                    class=" dark:fill-gray-950"></path>
+            </svg>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="banner-data">
+                            <h2 class="Lora">Where Every Pet Gets the Royal Treatment</h2>
+                            <p class="text-secondary mt-3 mb-4 fs-5">Professional grooming, loving daycare, and
+                                comfortable boarding for your furry family members. Because they deserve the best.</p>
+                            <div class="banner-btn">
+                                <a href="" class="btn-1">Book an Appointment</a>
+                                <a href="" class="btn-2">View Services</a>
+                            </div>
+                            <div class="row mt-5 d-flex">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="banner-counts">
+                                        <h5>10K+</h5>
+                                        <p class="text-secondary">Happy Pets</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="banner-counts">
+                                        <h5>8+</h5>
+                                        <p class="text-secondary">Years Experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="banner-counts">
+                                        <h5>4.9</h5>
+                                        <p class="text-secondary">Average Rating</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="banner-counts">
+                                        <h5>50+</h5>
+                                        <p class="text-secondary">Services</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="banner_image_box mt-5">
+                            <img src="media/photo-1587300003388-59208cc962cb (2).jpg" alt="" width="100%">
+                            <div class="image_shadow_green"></div>
+                            <div class="image_shadow_red"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <section class="service" id="service">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <h2>Our Services</h2>
+                    <p class="text-secondary  poppins">Everything your pet needs for a happy, healthy life</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1516734212186-a967f81ad0d7.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                            <div class="popular-badge">Popular</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Full grooming</h5>
+                                <div class="card-price">
+                                    <span>From $ 65</span>
+                                </div>
+                            </div>
+                            <p>Complete grooming package including bath, haircut, nail trim, ear cleaning, and teeth
+                                brushing.</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Bath and blow dry</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Breed-specific haircut</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Nail trim</span>
+                            </div>
+                            <p class="text-secondary">Duration: 2-3 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1581888227599-779811939961.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Bath $ Brush</h5>
+                                <div class="card-price">
+                                    <span>From $ 35</span>
+                                </div>
+                            </div>
+                            <p>Refreshing bath with premium shampoo, blow dry, and thorough brushing to keep coat
+                                healthy.</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Premium shampoo</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Conditioning treatment</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Blow dry</span>
+                            </div>
+                            <p class="text-secondary">Duration: 1 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden pb-5">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1548199973-03cce0bbc87b.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                            <div class="popular-badge">Popular</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Daycare</h5>
+                                <div class="card-price">
+                                    <span>$35/Day</span>
+                                </div>
+                            </div>
+                            <p>Safe, supervised playtime with other dogs in our climate-controlled facility with
+                                indoor/outdoor areas</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Supervised play groups</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Indoor/outdoor areas</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Naptime rest period</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden pb-5">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1601758228041-f3b2795255f1.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Naptime rest period</h5>
+                                <div class="card-price">
+                                    <span>$55/Night</span>
+                                </div>
+                            </div>
+                            <p>Comfortable overnight stays with cozy bedding, multiple play sessions, and lots of love.
+                            </p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Private suites available</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Evening cuddle time</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>3+ play sessions daily</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1591946614720-90a587da4a36.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Nail Trim</h5>
+                                <div class="card-price">
+                                    <span>$15</span>
+                                </div>
+                            </div>
+                            <p>Quick and stress-free nail trimming by experienced groomers using gentle handling
+                                techniques.</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Gentle handling</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Dremel smoothing</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Paw pad check</span>
+                            </div>
+                            <p class="text-secondary">Duration: 15 mint</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mt-5 overflow-hidden ">
+                        <div class="card-img zoom">
+                            <img src="media/photo-1587300003388-59208cc962cb.jpg" class="card-img-top img-fluid"
+                                alt="Grooming Dog">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="Lora mb-0">Puppy Package</h5>
+                                <div class="card-price">
+                                    <span>$45</span>
+                                </div>
+                            </div>
+                            <p>Special first grooming experience designed to make puppies comfortable with the grooming
+                                process.</p>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Gentle introduction</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Mini Bath</span>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-check service-icon"></i>
+                                <span>Face trim</span>
+                            </div>
+                            <p class="text-secondary">Duration: 1 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class=" col-lg-3 col-md-6 col-sm-12 col-12  d-flex justify-content-center align-items-center">
+                        <a href="" class="service-btn">View All services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story section -->
+    <section class="section-distance " id="about">
+        <div class="story-color">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 col-md-12 col-sm-12 ">
+                        <div class="story-img">
+                            <img src="media/photo-1450778869180-41d0601e046e.jpg" alt="" class="img-fluid w-100 mt-4">
+                            <div class="story-year">
+                                <span><b>8+</b> <br> Years</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <h6>OUR STORY</h6>
+                        <h2 class="Lora">A Place Where Pets Come First</h2>
+                        <div class="mt-4 text-secondary">
+                            <p>Paws & Play was founded in 2015 by Sarah Mitchell, a certified master groomer with a
+                                vision to create a stress-free environment where pets could receive top-quality care.
+                            </p>
+                            <p> What started as a small grooming salon has grown into Austin's premier pet care
+                                facility, offering grooming, daycare, and boarding services for dogs and cats of all
+                                sizes.</p>
+                            <p>Our team of certified professionals treats every pet like their own, using gentle
+                                handling techniques and positive reinforcement to ensure a happy experience.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="story-card d-flex gap-3">
+                                    <div class="story-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Certified Staff</h5>
+                                        <p class="text-secondary">All groomers are nationally certified with ongoing
+                                            education requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="story-card d-flex gap-3">
+                                    <div class="story-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Certified Staff</h5>
+                                        <p class="text-secondary">All groomers are nationally certified with ongoing
+                                            education requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="story-card d-flex gap-3">
+                                    <div class="story-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Certified Staff</h5>
+                                        <p class="text-secondary">All groomers are nationally certified with ongoing
+                                            education requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                                <div class="story-card d-flex gap-3">
+                                    <div class="story-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h5>Certified Staff</h5>
+                                        <p class="text-secondary">All groomers are nationally certified with ongoing
+                                            education requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pets gallery -->
+    <section class="section-distance pb-100" id="gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="gallery-heading text-center">
+                        <h2 class="Lora">Happy Pets Gallery</h2>
+                        <p class="text-secondary poppins">See our furry friends looking their best</p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1587300003388-59208cc962cb (1).jpg" class="card-img-top img-fluid"
+                                alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Grooming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1548199973-03cce0bbc87b (1).jpg" class="card-img-top img-fluid"
+                                alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Daycare</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1583511655857-d19b40a7a54e.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Grooming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1596492784531-6e6eb5ea9993.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Grooming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1601758228041-f3b2795255f1 (1).jpg" class="card-img-top img-fluid"
+                                alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Boarding</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1534361960057-19889db9621e.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Grooming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1544568100-847a948585b9.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="pet-hover  rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Grooming</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                        <div class="zoom pets">
+                            <img src="media/photo-1560807707-8cc77767d783.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="pet-hover rounded-pill px-3 py-2 text-center">
+                                <span class="text-dark">Boarding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-lg-6 col-md-12 mt-5 justify-content-center">
+                    <div class="text-center">
+                        <p class="text-secondary fs-5">Follow us on Instagram to see more happy pets!</p>
+                        <div class=" follow d-flex gap-2 justify-content-center align-items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="">@pawsandplay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parent suggestion section -->
+    <section>
+        <div class="parent">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="text-center parent-data">
+                            <h2 class="Lora text-white">What Pet Parents Say</h2>
+                            <p class="text-white poppins mb-5">Don't just take our word for it - hear from our happy
+                                customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="parent-review">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3 text-secondary">"My anxious rescue dog Max used to hate grooming, but the
+                                team at Paws & Play has completely changed his experience. He actually wags his tail
+                                when we pull up now!"</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="parent-img">
+                                    <img src="/media/photo-1558618666-fcd25c85cd64.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold">Jessica Thompson</h6>
+                                    <span class="text-secondary">Max, Golden Retriever</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="parent-review">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3 text-secondary">"The daycare is amazing! My pup comes home happy and tired.
+                                The daily report cards and photos are such a nice touch. Best investment for my
+                                work-from-home sanity."</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="parent-img">
+                                    <img src="/media/photo-1507003211169-0a1dd7228f2d.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold">Michael Park</h6>
+                                    <span class="text-secondary">Luna, Labradoodle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="parent-review">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3 text-secondary">"We board our two cats here whenever we travel, and they
+                                always seem relaxed when we pick them up. The staff truly cares about all animals, not
+                                just dogs."</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="parent-img">
+                                    <img src="/media/photo-1438761681033-6461ffad8d80.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold">Amanda Chen</h6>
+                                    <span class="text-secondary">Whiskers & Shadow, Cats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                        <div class="parent-review">
+                            <div class="d-flex gap-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="mt-3 text-secondary">"Sarah is a miracle worker! She transformed my matted Maltese
+                                into a show-worthy pup. The attention to detail and patience is unmatched anywhere in
+                                Austin."</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="parent-img">
+                                    <img src="/media/photo-1500648767791-00dcc994a43e.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold">David Martinez</h6>
+                                    <span class="text-secondary">Princess, Maltese</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Book appointment section -->
+    <section class="booking">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="d-flex text-center justify-content-center align-items-center gap-4">
+                        <div class="booking-icon ">
+                            <i class="fa-solid fa-paw text-white"></i>
+                        </div>
+                        <div class="booking-icon ">
+                            <i class="fa-solid fa-paw text-white"></i>
+                        </div>
+                        <div class="booking-icon ">
+                            <i class="fa-solid fa-paw text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-md-10 col-sm-12">
+                        <div class="text-center">
+                            <div class="booking-data mt-4 text-center">
+                                <h2 class="Lora text-white">Ready to Pamper Your Pet?</h2>
+                                <p class="text-white">Book an appointment today and give your furry friend the love and
+                                    care they deserve. First-time customers get 15% off their first grooming service!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-4 col-sm-12">
+                        <div class=" booking-button d-flex justify-content-center  gap-3 mt-4">
+                            <a href="" class="bookingbtn-1">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span class="text-center">Book Appointment</span>
+                            </a>
+                            <a href="" class="bookingbtn-2">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>(555)728-7529</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-2 footer-sec-padding">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="d-flex justify-content-start align-items-center gap-3">
+                        <div class="footer-icon">
+                            <a href=""><i class="fa-solid fa-paw"></i></a></i>
+                        </div>
+                        <h4><a href="" class="text-white">Paws & Plays</a></h4>
+                    </div>
+                    <p class="text-secondary mt-3">Premium pet grooming, daycare, and boarding services in Austin, TX.
+                        Loving care for your furry family members since 2015.</p>
+                    <div class="footer-list mt-4">
+                        <ul class="d-flex gap-4">
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                            </li>
+                            <li class="list-icon">
+                                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Services</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">Grooming</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Daycare</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Boarding</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Company</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">About US</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Our Team</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Gallery</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+                    <div>
+                        <h6 class="text-white poppins">Support</h6>
+                        <ul class="space-y-3 footer_list">
+                            <li class="mb-3 mt-3">
+                                <a href="" class=" text-secondary">FAQs</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">New Client Info</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Vaccination Policy</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="" class=" text-secondary">Cancellation Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-secondary opacity-25">
+            <div class="row footer-sec-padding">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>HOURS</h6>
+                        <p class="mb-1">Mon-Fri: 7:00 AM - 7:00 PM</p>
+                        <p class="mb-1">Saturday: 8:00 AM - 6:00 PM</p>
+                        <p class="mb-1">Sunday: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>CONTACT</h6>
+                        <p class="mb-1">hello@pawsandplay.com</p>
+                        <p class="mb-1">(555) 728-7529</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="text-secondary">
+                        <h6>LOCATION</h6>
+                        <p class="mb-1">456 Pet Paradise Lane</p>
+                        <p class="mb-1">Austin, TX 78701</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-secondary opacity-25">
+            <div class="row footer-sec-padding">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div>
+                        <p class="text-secondary">© 2026 Paws & Play. Designed & Developed by Ayesha Zanib.</p>
+                    </div>
+                    <div class="g-3">
+                        <a href="" class="text-secondary" style="margin-right: 20px;"> Privacy Policy</a>
+                        <a href="" class="text-secondary">Terms & Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- java link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar_animation');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar_animation');
+            } else {
+                navbar.classList.remove('navbar_animation');
+            }
+        });
+    </script>
+</body>
+
+</html>

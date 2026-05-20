@@ -1,0 +1,1039 @@
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Is se scroll aaram se (smoothly) hoga */
+    scroll-padding-top: 100px; /* Apni navbar ki height ke hisaab se isko kam ya zyada kar lein */
+}
+body{
+    overflow-x: hidden;
+}
+.Lora{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+
+}
+.poppins{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+:root {
+  /* Colors */
+  --pink: #db2777;     
+  --light-pink: #fdf2f8;    
+  --dark-pink: #c51c63;
+
+  /* font families */
+  --Lora:"Lora", serif;
+  --poppins:"Poppins", sans-serif;
+}
+li{
+    list-style: none;
+    
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.zoom{
+	transition: 0.3s;
+	overflow: hidden !important;
+	border-radius: 10px;
+}
+.zoom img{
+	transition: 0.35s;
+}
+.zoom :hover{
+	transform: scale(1.1);
+}
+a{
+    text-decoration: none !important;
+}
+.main_wrapper{
+    background-image: linear-gradient(to right bottom in oklab, rgb(253, 242, 248) 0%, rgb(255, 255, 255) 50%, rgb(240, 253, 244) 100%)
+}
+
+::selection {
+    color: #831843;
+    background-color: #fbcfe8;
+  }
+
+/* navbar styling */
+.navbar{
+    position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	padding: 20px 0 !important;
+	background-color:transparent;
+}
+.navbar_animation{
+    background-color: color-mix(in oklab,#ffffff 95%,transparent);
+    border-bottom: 1px solid #fbcfe8;
+}
+.nav-icon{
+    background-color: #c51c63;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav-icon a i{
+    color: white;
+    font-size: 30px;
+}
+.nav-logo span a{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: var(lora);
+    color: black;
+}
+.nav-link{
+    color: #555d68 !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-btn{
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #c51c63;
+    border: none;
+}
+.nav-btn a{
+    color: white;
+    font-weight: 400;
+}
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* banner section  */
+.section-distance{
+    padding-top: 100px;
+    position: relative;
+}
+.pb-100{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.section-distance svg{
+    position: absolute;
+    bottom: 0;
+}
+.section-distance img{
+    border-radius: 18px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.banner-data h2{
+    font-weight: 700;
+    font-size: 65px;
+}
+.banner-btn{
+    display: flex;
+    gap: 15px;
+}
+.btn-1{
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #c51c63;
+    font-weight: 500;
+    color: white;
+}
+.btn-1:hover{
+    color: white;
+}
+
+
+.btn-2{
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 2px solid var(--dark-pink) ;
+    font-weight: 500;
+    background-color: white;
+     color: var(--dark-pink);
+}
+.btn-2:hover{
+    background-color: #c51c63;
+    color: white;
+}
+.banner-counts h5{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-pink);
+}
+.banner_image_box{
+    position: relative;
+}
+.image_shadow_green{
+    position:absolute ;
+    bottom: -24px;
+    left: -24px;
+    background-color: #4ade80;
+    border-radius: 16px;
+    opacity: 0.5;
+    filter: blur(40px);
+    width: 96px;
+    height: 96px;
+}
+.image_shadow_red{
+    position:absolute ;
+    top: -24px;
+    right: -24px;
+    background-color: #f472b6;
+    border-radius: 16px;
+    opacity: 0.5;
+    filter: blur(40px);
+    width: 128px;
+    height: 128px;
+}
+
+/* service section styling */
+.service{
+    padding-top: 100px;
+}
+.service h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--Lora);
+}
+.card{
+    background-color: #f2f4f6 !important;
+    border-radius: 20px !important;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card-img{
+    position: relative;
+}
+.popular-badge{
+    position: absolute; 
+    top: 15px;        
+    right: 15px;       
+    
+    background-color: #1cc853; 
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 3px 10px;
+    border-radius: 25px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-price{
+    padding: 5px 15px;
+    background-color:#fce7f3;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fce7f3;
+}
+.card-price span{
+    color: var(--dark-pink);
+    font-weight: 500;
+    font-size: 15px;
+}
+.service-icon {
+    color: #22c55e;
+    font-size: 12px;
+}
+.service-btn{
+    color: var(--dark-pink);
+    padding: 10px 20px;
+    border: 2px solid var(--dark-pink);
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: white;
+}
+.service-btn:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+
+/* story section styling */
+.story-color{
+    background-color: var(--light-pink);
+    padding: 60px 0px;
+}
+.story-color h6{
+    color: var(--dark-pink);
+}
+.story-color h2{
+    font-weight: 800;
+}
+.story-img{
+    position: relative;
+}
+.story-year{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: var(--dark-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -15px;
+    right: -25px;
+}
+.story-year span{
+    color: white;
+    font-size: 20px;
+}
+.story-year span b{
+    font-size: 40px;
+    font-weight: 700;
+}
+.story-card{
+    padding: 15px 18px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+.story-card p{
+    margin: 0;
+}
+.story-icon{
+    height: 35px;
+    width: 90px;
+    background-color: #dcfce7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story-icon i{
+    color: #22c55e;
+}
+
+/* pet gallery section styling */
+/* Container ko relative position dain taake badge iske andar set ho sake */
+.zoom.pets {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Image ke corners gol karne ke liye */
+}
+
+/* Image ka zoom effect (kyun ke aapne zoom class use ki hai) */
+.zoom.pets img {
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Hover karne par image thori bari hogi */
+.zoom.pets:hover img {
+    transform: scale(1.08); 
+}
+
+/* Badge ki styling jo hide rahegi shuru mein */
+.pet-hover {
+    position: absolute;
+    bottom: 20px; /* Neeche se margin */
+    left: 20px;   /* Left se margin */
+    background-color: #f4f6f8; /* Off-white background */
+    padding: 6px 10px !important;
+    border-radius: 30px; /* Pill shape (gol edges) */
+    opacity: 0; /* Shuru mein gayab rahega */
+    visibility: hidden;
+    transform: translateY(10px); /* Thora neeche hoga */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+/* Container par hover karne se badge show hoga */
+.zoom.pets:hover .pet-hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Apni asli jagah par aayega */
+}
+
+.gallery-heading h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.pets {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Initial state: Isko hide rakhein */
+.pet-hover {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50;
+    left: 50;
+    transition: all 0.4s ease; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.pets:hover .pet-hover{
+    visibility: visible;
+}
+/* follow insta part */
+.follow i{
+    font-size: 25px;
+    color: var(--dark-pink);
+}
+.follow a{
+    color: var(--dark-pink);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* pet parent section */
+.parent{
+    background-color: var(--pink);
+    padding: 100px 0px;
+    
+}
+.parent-data h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.parent-data p{
+    font-size: 16px;
+}
+.parent-review{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 25px;
+    height: 100%;
+}
+.parent-review i{
+    color: #22c55e;
+}
+.parent-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* book appointment section */
+.booking{
+    background-color: var(--dark-pink);
+    padding: 100px 0px;
+}
+.booking-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #d54c87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-data h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.booking-data p{
+    font-size: 18px;
+
+}
+.bookingbtn-1, .bookingbtn-2 {
+    
+    padding: 12px 25px;
+    border-radius: 50px; /* Pill shape */
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Text ko ek line mein rakhne ke liye */
+}
+.bookingbtn-1{
+    border: none;
+    background-color: white;
+    color: var(--dark-pink);
+    font-weight: 600;
+}
+.bookingbtn-1:hover{
+    color: var(--dark-pink);
+}
+
+.bookingbtn-2{
+    background-color: var(--dark-pink);
+    border: 1px solid white;
+    color: white;
+}
+.bookingbtn-2:hover{
+   background-color: #d13779 !important;
+   color: white;
+}
+.bookingbtn-2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+/* footer section */
+.footer{
+    background-color: #111827;
+
+}
+.footer-icon{
+    background-color: #c51c63;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-icon:hover{
+    background-color: var(--pink);
+}
+.footer-icon a i{
+    color: white;
+}
+.list-icon{
+    background-color: #343c4e;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-icon a i{
+    font-size: 20px;
+    color: white;
+}
+.footer-sec-padding{
+    padding: 50px 0px;
+}
+
+
+
+
+/* team page styling */
+.team-banner{
+    background-color: var(--pink);
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.team-banner h2{
+    font-size: 45px;
+    font-weight: 700
+}
+.team-banner p{
+    font-size: 18px;
+}
+
+/* team famliy */
+.team-family {
+    padding: 100px 0px;
+    background-color: #f9fafb;
+}
+.team-family h2{
+    font-size: 45px;
+    font-weight: 700
+}
+.team-family p{
+    font-size: 18px;
+}
+/* family details */
+.family-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.family-detail{
+    justify-content: center;
+    text-align: center;
+}
+.family-detail p{
+    color: var(--pink);
+}
+.profile-tags {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Taki choti screens par tags neechay aa jayein */
+}
+
+/* Individual pill/tag styling */
+.tag {
+  background-color: #fbebf1; /* Very light pink */
+  color: #c92a6b; /* Dark pink text */
+  padding: 8px 10px;
+  border-radius: 25px; /* Pill shape */
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* why choose us section */
+.choose-us{
+    padding: 100px 0px;
+}
+.choose-us h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.choose-us p{
+    font-size: 18px;
+}
+.certifications{
+    padding: 30px 15px;
+    background-color:#f9fafb ;
+    border-radius: 15px;
+    min-height: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.certificate-icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fce7f3;
+    color: var(--dark-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.certificate-icon i{
+    font-size: 20px;
+}
+.certifications h6{
+    font-weight: 700;
+    font-style: var(--poppins) !important;
+}
+.certifications p{
+    font-size: 15px;
+    color: lightgray ;
+}
+.icon-2{
+    background-color: #dcfce7 !important;
+    color: #34b162 !important;
+}
+
+
+/* contact page styling */
+.new-client{
+    padding: 100px 0px;
+    background-color: #fdf2f8;
+}
+.new-client h2{
+    font-weight: 600;
+}
+.Client-icon{
+   height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fce7f3;
+    color: var(--dark-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.Client-icon i{
+    font-size: 20px;
+}
+.footer_list li a:hover{
+    color: white !important;
+}
+
+
+/* Default navbar style - Transition lagai hai taake color achanak na badle, smooth change ho */
+#main-nav {
+    background-color: transparent; /* Shuru mein background transparent hoga */
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.color {
+    color: #ffffff ; /* White color */
+    transition: color 0.3s ease-in-out; /* Smooth effect ke liye */
+}
+.color:hover{
+    color: white;
+}
+
+/* Yeh class JavaScript scroll hone par add karegi */
+.scrolled-nav {
+    background-color: var(--light-pink) !important; /* Ek khoobsurat dark color */
+    backdrop-filter: blur(12px); /* Modern Glassmorphism effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Niche halka sa shadow */
+}
+.scrolled-nav .color{
+    color:#000000  !important;
+}
+
+
+/* Scroll hone par navbar-nav ke andar nav-link ka color light black (#333) karne ke liye */
+.scrolled-nav .navbar-nav .nav-link {
+    color: #000000 !important; /* Yeh light black / dark gray color hai */
+    transition: color 0.3s ease-in-out; /* Taake color achanak na badle, smooth change ho */
+}
+
+/*contact section */
+.contact{
+    padding: 100px 0;
+}
+.contact form{
+    padding-top: 32px;
+}
+.contact form label{
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.contact form input::placeholder{
+     color: #6b7280;
+}
+.contact form input{
+    padding: 12px !important;
+    height: 50px;
+    color: #111827;
+    border-color: #e5e7eb !important;
+    border-radius: 8px !important;
+}
+.contact form input:focus{
+    box-shadow: 0 0 0 white;
+    outline:1px solid #db2777;
+}
+.contact form select::placeholder{
+     color: #6b7280;
+}
+.contact form select{
+    padding: 12px !important;
+    height: 50px;
+    color: #111827;
+    border-color: #e5e7eb !important;
+    border-radius: 8px !important;
+}
+.contact form select:focus{
+    box-shadow: 0 0 0 white;
+    outline:1px solid #db2777;
+}
+.contact form textarea::placeholder{
+     color: #6b7280;
+}
+.contact form textarea{
+    padding: 12px !important;
+    color: #111827;
+    border-color: #e5e7eb !important;
+    border-radius: 8px !important;
+}
+.contact form textarea:focus{
+    box-shadow: 0 0 0 white;
+    outline:1px solid #db2777;
+}
+.form_row{
+    row-gap: 24px;
+}
+.form_btn{
+    padding-top: 30px;
+}
+.form_btn button{
+    padding: 12px 24px;
+    background-color: #db2777;
+    border-radius: 32px;
+    border: none;
+    color: white;
+}
+.contaact_info{
+    padding-top: 32px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contaact_info_icon{
+    min-width: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    border-radius: 50%;
+    background-color: #fce7f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+.contaact_info_icon svg{
+    width: 24px;
+}
+.map_box{
+    display: flex;
+    flex-direction: column;
+}
+.map_box iframe{
+    border-radius: 16px 16px 0 0;
+}
+.map_body{
+    background-color: #f3f4f6;
+    padding: 24px;
+    border-radius: 0 0 16px 16px ;
+}
+.map_link{
+    color: #db2777;
+}
+.map_link:hover{
+    color: #db2777;
+}
+.map_link svg{
+    width: 16px;
+}
+
+/*FAQS section*/
+.faqs{
+    padding: 100px 0;
+}
+.faqs_main{
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column; 
+    gap: 24px;
+}
+.faqs_box{
+    background-color: #f9fafb;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    gap: 20px;
+}
+.faqs_box h3{
+    color: #111827;
+    font-weight: 700;
+    font-size: 16px;
+}
+.faqs_box p{
+    color: #4b5563;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.faqs_icon{
+    background-color:rgb(252, 231, 243);
+    color: #db2777;
+    font-weight: 800;
+    border-radius: 50%;
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more_question{
+    margin-top: 40px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #fdf2f8;
+}
+.more_question h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+}
+.more_question p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4b5563;;
+}
+.more_question a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 32px;
+    background-color: rgb(219, 39, 119);
+    transition: 0.35s;
+}
+.more_question a:hover{
+    color: #fff;
+    background-color: ##be185d;
+}
+
+/* index.html file media queries start here */
+/* heading sizes */
+@media screen and (max-width:767px){
+    .banner-btn {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .banner-btn a{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-data h2{
+        font-size: 30px;
+    }
+    .service h2{
+        font-size: 30px;
+    }
+    .gallery-heading h2{
+        font-size: 30px;
+    }
+    .parent-data h2{
+        font-size: 30px;
+    }
+    .parent-data p{
+        font-size: 17px;
+    }
+    .booking-data h2{
+        font-size: 30px;
+    }
+    .booking-data p{
+        font-size: 15px;
+    }
+    .footer-sec-padding{
+        padding: 30px 0px;
+    }
+    .booking-button {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .booking-button button{
+        width: 100%;
+    }
+    .story-year{
+        height: 100px;
+        width: 100px;
+        right: -10px;
+        bottom: -10px;
+    }
+    .story-year span b{
+        font-size: 25px;
+    }
+    .story-year span{
+        font-size: 15px;
+    }
+    .service{
+        padding-top: 50px;
+    }
+}
+/* index.html file media queries end here */ 
+
+@media screen and (max-width: 991px){
+    .form_btn{
+        margin-bottom: 40px;
+    }
+     #navbar_animation{
+        background-color: color-mix(in oklab,#ffffff 95%,transparent);
+    border-bottom: 1px solid #fbcfe8;
+    padding: 10px 0 !important;
+    }
+    #main-nav{
+        background-color: color-mix(in oklab,#ffffff 95%,transparent);
+    border-bottom: 1px solid #fbcfe8;
+    padding: 10px 0 !important;
+    }
+    #main-nav .color{
+        color: black !important;
+    }
+}
+/* team.html file media queries start here */
+@media screen and (max-width:767px) {
+    .team-banner{
+        padding: 150px 0px 50px 0px ;
+    } 
+    .team-banner h2{
+        font-size: 30px;
+    }
+    .team-banner p{
+        font-size: 15px;
+    }
+    .team-family{
+        padding: 50px;
+    }
+    .team-family h2{
+        font-size: 30px;
+    }
+    .team-family p{
+        font-size: 15px;
+    }
+    .choose-us{
+        padding: 50px;
+    }
+    .choose-us h2{
+        font-size: 30px;
+    }
+    .choose-us p{
+        font-size: 15px;
+    }
+    .image_shadow_green{
+        width: 60px;
+        height: 60px;
+        left: 0;
+    }
+    .image_shadow_red{
+        width: 60px;
+        height: 60px;
+        right: 0;
+    }
+    .section-distance{
+        padding-top: 50px;
+    }
+    .pb-100{
+        padding-bottom: 50px;
+        padding-top: 100px;
+    }
+    .parent{
+        padding: 50px 0;
+    }
+    .booking{
+        padding: 50px 0;
+    }
+    .team-banner{
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+    .new-client{
+        padding: 50px 0;
+    }
+    .contact{
+        padding: 50px 0;
+    }
+    .contact form{
+        padding-top: 10px;
+    }
+
+    .contaact_info{
+        padding-top: 10px;
+    }
+    .faqs_main{
+        padding-top: 20px;
+    }
+    .faqs{
+        padding: 50px 0;
+    }
+    #navbar_animation{
+        background-color: color-mix(in oklab,#ffffff 95%,transparent);
+    border-bottom: 1px solid #fbcfe8;
+    padding: 10px 0 !important;
+    }
+    #main-nav{
+        background-color: color-mix(in oklab,#ffffff 95%,transparent);
+    border-bottom: 1px solid #fbcfe8;
+    padding: 10px 0 !important;
+    }
+    #main-nav .color{
+        color: black !important;
+    }
+}
+
+
+
+/* team.html file media queries end here */
